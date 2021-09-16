@@ -1,5 +1,6 @@
 # Author: Nate Goldsborough
 # Assignment: Homework 1
+# Filename: h01.py
 # Class: INFOST350
 # Date: 9/15/2021
 # Description: This program will demonstrate my ability to type
