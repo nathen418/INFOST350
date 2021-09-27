@@ -1,5 +1,5 @@
 # INFOST350
-A repo of all the code written for my **Introduction To Application Development (INFOST350) Fall 2021** class at the University of Wisconsin Milwaukee. Kept as an archive. The assignment sheets and instructions for all code are not shared, only sample code answers. 
+A repo of all the code written for my **Introduction To Application Development (INFOST350) Fall 2021** class at the University of Wisconsin Milwaukee. Kept as an archive. The assignment sheets and instructions for all code are not shared, only sample code answers. This code has only been made available after the completion of the course.
 
 
 ## Questions?
