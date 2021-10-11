@@ -3,7 +3,7 @@
 # Filename: h04_used_cars.py
 # Class: INFOST350
 # Date: 10/4/2021
-# Description: understand how to use dictionaries and lists and how to loop thru them easily
+# Description: Understand how to use dictionaries and lists and how to loop thru them easily
 
 def main():
     tesla_modelS = {'owner_lname': 'tommas', 'owner_fname': 'harry', 'model_name': 'modelS', 'brand': 'tesla', 'price_list': 13500.00}

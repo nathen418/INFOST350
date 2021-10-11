@@ -12,7 +12,7 @@ A repo of all the code written for my **Introduction To Application Development 
 - If you have a question, contact me through my discord
 
 ## Join my discord server:
-https://dsc.gg/antaresnetwork
+https://playantares.com/discord
 
 ## License
 
