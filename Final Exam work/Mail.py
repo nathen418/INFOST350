@@ -16,7 +16,6 @@ class Mailsend:
         self.__port = 587
         self.__username = "supersecretaddress3"
         self.__from = "supersecretaddress2"
-
     #add all getters and setters
     def getTo(self):
         return self.__to
