@@ -1,5 +1,5 @@
 # Author: Nate Goldsborough
-# Assignment: Homework 5
+# Assignment: Homework 6
 # Filename: h06_wage.py
 # Class: INFOST350
 # Date: 10/18/2021
