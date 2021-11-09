@@ -1,11 +1,11 @@
 # Author: Nate Goldsborough
 # Assignment: Homework 8
-# Filename: h08_resteraunt_class.py
+# Filename: h08_cafe_class.py
 # Class: INFOST350
 # Date: 11/8/2021
-# Description: 
+# Description: This program will create a Cafe class that is a child of the Restaurant class, thn describe the cafe and its attributes, and display the menu.
 
-import h08_restaurant_class as Rc
+from h08_restaurant_class import Restaurant as Rc
 
 class Cafe(Rc):
     def __init__(self, name, type, menu):
@@ -19,7 +19,7 @@ class Cafe(Rc):
 
 
 def main():
-    menu = ["Coffee", "Tea", "Cake"]
+    menu = ["Coffee", "Tea", "Cake", "Cookie", "Sandwich", "Pizza", "Burger", "Fries", "Salad", "Soup"]
     cafe = Cafe("muffin Hause", "Cafe", menu)
     cafe.describeRestaurant()
     cafe.openRestaurant()
@@ -27,3 +27,20 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# Sample Output:
+# muffin Hause restaurant is a Cafe type of restaurant
+# muffin Hause restaurant is open
+
+# Cafe Menu:
+# Coffee
+# Tea
+# Cake
+# Cookie
+# Sandwich
+# Pizza
+# Burger
+# Fries
+# Salad
+# Soup

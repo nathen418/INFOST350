@@ -11,7 +11,7 @@ class Restaurant:
         self.name = name
         self.type = rType
     
-    def describeRestartant(self):
+    def describeRestaurant(self):
         print(f'{self.name} restaurant is a {self.type} type of restaurant')
 
     def openRestaurant(self):
@@ -25,11 +25,20 @@ def main():
     for restaurant in restaurants:
         if restaurant.name == 'Pizza Hut':
             print(f'Raw data:\nType: {restaurant.type}\nName: {restaurant.name}')
-        restaurant.describeRestartant()
+        restaurant.describeRestaurant()
         restaurant.openRestaurant()
 
 
 if __name__ == "__main__":
     main()
 
-        
+# Sample Output:
+# Raw data:
+# Type: Pizza
+# Name: Pizza Hut
+# Pizza Hut restaurant is a Pizza type of restaurant
+# Pizza Hut restaurant is open
+# Ramen House restaurant is a Ramen type of restaurant
+# Ramen House restaurant is open
+# Whole Foods restaurant is a Grocery Store type of restaurant
+# Whole Foods restaurant is open
