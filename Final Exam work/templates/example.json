@@ -1,0 +1,12 @@
+{
+    "template_name": "Birthday Greeting",
+    "template_style": "informal",
+    "template_variables": 
+        [
+            "<name>",
+            "<age>",
+            "<fromName>"
+        ],
+    "template_body":
+        "Hey <name>,\n I just wanted to wish you a happy <age> birthday!\n Miss you dude! -- <fromName>"
+}
