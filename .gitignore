@@ -1,3 +1,4 @@
 .vscode
-.env
-__pycache__
+env.json
+*/__pycache__
+test-email-send.py
