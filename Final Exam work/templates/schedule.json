@@ -1,0 +1,11 @@
+{
+    "template_name": "NewSchedulePosted",
+    "template_style": "Formal",
+    "template_variables": 
+        [
+            "<fromName>",
+            "sendersTitle"
+        ],
+    "template_body":
+        "Hello all, \n A quick email to notify everyone that the the next shift schedule has been posted. Make sure you take a look. \n Thanks, \n <fromName> \n <sendersTitle>"
+}

@@ -1,12 +1,24 @@
 from Mail import Mail
 import re
 import json
+import os
 
 def validateEmail(email):
     if len(email) > 7:
         if re.match("^.+\\@(\\[?)[a-zA-Z0-9\\-\\.]+\\.([a-zA-Z]{2,3}|[0-9]{1,3})(\\]?)$", email) != None:
             return True
     return False
+
+def listTemplates():
+    templates = os.listdir('templates')
+    print("These are a list of templates:")
+    for template in templates:
+        print(template[:-5], end=', ') #! This looks stupid and needs to be fixed 
+
+def openTemplate(templateName):
+    f = open('templates/' + templateName + '.json')
+    data = json.load(f)
+    return data
 
 def main():
     # Welcome the user and give them a startup message
@@ -20,14 +32,23 @@ def main():
             break
         else:
             print("Invalid email address. Please type a correct one.")
-    subject = input("Subject: ")
-    templateName = input("Please enter the name of the template that you want to fill out: ")
-    body = "Stuff"
 
+    subject = input("Subject: ")
+
+    # List the templates and ask the user to choose one
+
+    listTemplates()
+    templateName = input("Please enter the name of the template that you want to fill out: ")
+    data = openTemplate(templateName)
+    body = str(data['template_body'])
+    for var in data['template_variables']:
+        body = body.replace(var, input(var + ': '))
+    print(body)
 
     # create the email object and send the email
     email = Mail(to_addr, subject, body)
     email.create()
+    email.validate()
     email.send()
 
 if __name__ == "__main__":

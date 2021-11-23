@@ -1,0 +1,12 @@
+{
+    "template_name": "EmployeeGetWell",
+    "template_style": "Formal",
+    "template_variables": 
+        [
+            "<name>",
+            "<fromName>",
+            "sendersTitle"
+        ],
+    "template_body":
+        "Hey <name>,\n we just wanted to wish you good luck in getting better again. Your job will of course we waiting for you when you get back and we hope to see you healthy. \n Sincerly, \n <fromName> \n <sendersTitle>"
+}

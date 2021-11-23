@@ -58,3 +58,14 @@ class Mail:
             print('Message failed to send. Please try again later')
             return False
         server.quit()
+    
+    def validate(self):
+        print("Lets double check this is all correct")
+        print("To: " + self.__to)
+        print("Subject: " + self.__subject)
+        print("Body:" + self.__message)
+        answer = input("Is this correct? (y/n)")
+        if answer == 'y':
+            return True
+        else:
+            setTo(self, input("To: "))

@@ -1,0 +1,11 @@
+{
+    "template_name": "ChristmasCard",
+    "template_style": "informal",
+    "template_variables": 
+        [
+            "<name>",
+            "<fromName>"
+        ],
+    "template_body":
+        "Happy holidays <name>, We hope you are having a great time with your friends and family!-- <fromName>"
+}

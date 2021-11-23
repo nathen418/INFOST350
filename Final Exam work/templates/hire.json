@@ -1,0 +1,14 @@
+{
+    "template_name": "NewHire",
+    "template_style": "Formal",
+    "template_variables": 
+        [
+            "<companyName>",
+            "<newHiresName>",
+            "<jobPosition>",
+            "<fromName>",
+            "<sendersTitle>"
+        ],
+    "template_body":
+        "Hello all employees of <companyName>,\n We would like to welcome the newest member of our team <newHireName>. They will be joining us as a(n) <jobPosition>. \n All the best, \n <fromName> \n <sendersTitle>"
+}
