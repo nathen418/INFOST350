@@ -76,6 +76,7 @@ def main():
         # If everything is correct, send the email
         email.send()
 
-# Run the main function
+
 if __name__ == "__main__":
+    # Run the main function
     main()
