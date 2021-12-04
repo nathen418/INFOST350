@@ -63,9 +63,9 @@ class Mail:
         print("Lets double check this is all correct")
         print("To: " + self.__to)
         print("Subject: " + self.__subject)
-        print("Body:" + self.__message)
+        print("Body:" + self.__message.as_string())
         answer = input("Is this correct? (y/n)")
         if answer == 'y':
             return True
         else:
-            setTo(self, input("To: "))
+            return False

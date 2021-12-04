@@ -9,16 +9,24 @@ def validateEmail(email):
             return True
     return False
 
+
 def listTemplates():
     templates = os.listdir('templates')
     print("These are a list of templates:")
+    ret = []
     for template in templates:
-        print(template[:-5], end=', ') #! This looks stupid and needs to be fixed 
+        ret.append(template[:-5]) #! This looks stupid and needs to be fixed 
+    return ret
+    
 
 def openTemplate(templateName):
-    f = open('templates/' + templateName + '.json')
-    data = json.load(f)
-    return data
+    try:
+        f = open('templates/' + templateName + '.json')
+        data = json.load(f)
+        return data
+    except FileNotFoundError:
+        print("Template not found. Please try again.")
+
 
 def main():
     # Welcome the user and give them a startup message
@@ -37,8 +45,12 @@ def main():
 
     # List the templates and ask the user to choose one
 
-    listTemplates()
+    templates = listTemplates()
+    print(*templates, sep = ", ")
     templateName = input("Please enter the name of the template that you want to fill out: ")
+    while templateName not in templates:
+        print("Template not found. Please try again.")
+        templateName = input("Please enter the name of the template that you want to fill out: ")
     data = openTemplate(templateName)
     body = str(data['template_body'])
     for var in data['template_variables']:
@@ -48,8 +60,10 @@ def main():
     # create the email object and send the email
     email = Mail(to_addr, subject, body)
     email.create()
-    email.validate()
-    email.send()
+    if (not email.validate()):
+        main()
+    else:
+        email.send()
 
 if __name__ == "__main__":
     main()

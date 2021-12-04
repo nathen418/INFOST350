@@ -8,5 +8,5 @@
             "<fromName>"
         ],
     "template_body":
-        "Hey <name>,\n I just wanted to wish you a happy <age> birthday!\n Miss you dude! -- <fromName>"
+        "Hey <name>,\n I just wanted to wish you a happy <age> birthday!\n Miss you dude!\n -- <fromName>"
 }

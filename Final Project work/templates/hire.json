@@ -4,7 +4,7 @@
     "template_variables": 
         [
             "<companyName>",
-            "<newHiresName>",
+            "<newHireName>",
             "<jobPosition>",
             "<fromName>",
             "<sendersTitle>"

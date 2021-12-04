@@ -7,5 +7,5 @@
             "<fromName>"
         ],
     "template_body":
-        "Happy holidays <name>, We hope you are having a great time with your friends and family!-- <fromName>"
+        "Happy holidays <name>,\n We hope you are having a great time with your friends and family!\n\n-- <fromName>"
 }
