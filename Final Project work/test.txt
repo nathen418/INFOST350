@@ -1,0 +1,13 @@
+from typing import TextIO
+
+
+Introduce the program to the user
+Ask for the user to input an email address to send their email to
+validate the user typed a correct template name
+if not, ask the user to re-enter the template name
+if the user typed a correct template name, then open the template
+Print the template name and variables
+Ask the user to enter the values for the variables
+Print the body with the variables filled in
+Ask the user if they want to send the email
+Send the email
