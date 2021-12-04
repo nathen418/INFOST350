@@ -18,7 +18,7 @@ def listTemplates():
     print("These are a list of templates:")
     ret = []
     for template in templates:
-        ret.append(template[:-5]) #! This looks stupid and needs to be fixed 
+        ret.append(template[:-5])
     return ret
     
 
