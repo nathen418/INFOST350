@@ -7,7 +7,6 @@ A repo of all the code written for my **Introduction To Application Development 
 - no comments on files will be answered.
 
 ## License
-
 - Refer to the license file
 
 ## Important Note:
